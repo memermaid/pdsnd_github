@@ -5,7 +5,7 @@
 Explore US Bikeshare Data
 
 ### Description
-This project is a part of the course on Udacity - Programming for Data Science with Python. It contains a filtered bikesharing data provided by means of answers to the relevant questions about it.
+This project is a part of the course on Udacity - Programming for Data Science with Python. It contains a filtered Bikeshare data provided by means of answers to the relevant questions about it.
 
 ### Files used
 chicago.csv
