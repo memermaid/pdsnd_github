@@ -341,12 +341,11 @@ def main():
 
 
         restart = input('\nWould you like to restart? Enter Yes/Y or No/N. ').lower()
-        if restart == 'yes' or restart == 'y':
-           continue
-        elif restart == 'no' or restart == 'n':
+        while restart not in ['yes', 'y', 'no', 'n']:
+            print("\nYour input is invalid. Please enter only 'Yes/Y' or 'No/N'. ")
+            restart = input('\nWould you like to restart? Enter Yes/Y or No/N. ').lower()
+        if restart == 'no' or restart == 'n':
             break
-        else:
-            restart = input("\nYour input is invalid. Please enter only 'Yes/Y' or 'No/N'. ").lower()
 
 
 
