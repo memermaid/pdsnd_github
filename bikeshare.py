@@ -37,7 +37,7 @@ def get_filters():
 
     while True:
         print("Please choose the city. ")
-        city = input("Enter Chicago/CH, New York/NY or Washington/WA? ").lower()
+        city = input("Enter Chicago/ch, New York/ny or Washington/wa? ").lower()
         print()
         if city == 'ch':
             city = 'chicago'
@@ -341,7 +341,10 @@ def main():
 
 
         restart = input('\nWould you like to restart? Enter Yes/Y or No/N. ').lower()
-        if restart != 'yes' and restart != 'y':
+        while restart not in ['yes', 'y', 'no', 'n']:
+            print("\nYour input is invalid. Please enter only 'Yes/Y' or 'No/N'. ")
+            restart = input('\nWould you like to restart? Enter Yes/Y or No/N. ').lower()
+        if restart == 'no' or restart == 'n':
             break
 
 
